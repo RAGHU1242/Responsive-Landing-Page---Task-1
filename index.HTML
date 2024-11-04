@@ -4,62 +4,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Landing Page</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
 </head>
 <body>
+
+  <!-- Navigation Menu -->
   <nav id="navbar">
+    <!-- Logo -->
     <div class="logo">
-      <img src="https://play-lh.googleusercontent.com/06uT-pu776PNnu2Zj47l0ynqV7bl_BPBqPaclOCqEG64XYBd-HIovqbhDfX9s9Rjkg" alt="Webee">
+      <img src="https://play-lh.googleusercontent.com/06uT-pu776PNnu2Zj47l0ynqV7bl_BPBqPaclOCqEG64XYBd-HIovqbhDfX9s9Rjkg" alt="Webee"> <!-- Replace 'logo.png' with the path to your logo file -->
     </div>
+    <!-- Navigation Links -->
     <div class="nav-links">
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>
     </div>
+  
+    <!-- Login Button -->
     <div class="login-button">
       <a href="#login">Login / Sign In</a>
     </div>
   </nav>
-  
+
   <section id="home">
     <div class="home-content">
       <h1>Welcome to Webee</h1>
+     
       <div class="home-images">
-        <img src="https://digitalnotebook.in/up/2023/06/Website-design.jpg" alt="Image 1">
-        <img src="https://cdn.mos.cms.futurecdn.net/njuqY8bVEAK48uSGWiXxPi.jpg" alt="Image 2">
+        <img src="https://digitalnotebook.in/up/2023/06/Website-design.jpg" alt="Image 1"> <!-- Replace 'image1.jpg' with the path to your first image -->
+        <img src="https://cdn.mos.cms.futurecdn.net/njuqY8bVEAK48uSGWiXxPi.jpg" alt="Image 2"> <!-- Replace 'image2.jpg' with the path to your second image -->
       </div>
     </div>
   </section>
 
-  <section id="about">
+  <!-- About Section -->
+<section id="about">
     <div class="about-container">
-      <div class="about-text">
-        <div class="about-background">
-          <h2>About Us</h2>
-          <p>At Webee, we are dedicated to sharing innovative projects and ideas that inspire creativity and collaboration. Our platform allows users to showcase their work and connect with like-minded individuals, fostering a vibrant community of creators.</p>
+        <div class="about-text">
+            <div class="about-background">
+                <h2>About Us</h2>
+                <br>
+                <p>At Webee, we are dedicated to sharing innovative projects and ideas that inspire creativity and collaboration. Our platform allows users to showcase their work and connect with like-minded individuals, fostering a vibrant community of creators.</p>            </div>
         </div>
-      </div>
-      <div class="about-image">
-        <img src="https://www.gmtasoftware.com/blog/wp-content/uploads/2024/05/PERSONAL-WEBSITE-IDEAS-1024x538.png" alt="About Image">
-      </div>
+        <div class="about-image">
+            <img src="https://www.gmtasoftware.com/blog/wp-content/uploads/2024/05/PERSONAL-WEBSITE-IDEAS-1024x538.png" alt="About Image">
+        </div>
     </div>
-  </section>
+</section>
 
-  <section id="services">
+<!-- Services Section -->
+<section id="services">
     <div class="services-container">
-      <div class="services-image">
-        <img src="https://media.istockphoto.com/id/1341415561/vector/web-ui-ux-design-web-development-3d-concept.jpg?s=612x612&w=0&k=20&c=fuQZC3NmQDViKiWOte0e7a54LMmk3st3m2v-sVIS1Ks=" alt="Services Image">
-      </div>
-      <div class="services-text">
-        <div class="services-background">
-          <h2>Services</h2>
-          <p>We offer a range of services aimed at supporting project development and idea sharing. Whether you need assistance with project management, design consultations, or technical support, our team is here to help you turn your visions into reality.</p>
+        <div class="services-image">
+            <img src="https://media.istockphoto.com/id/1341415561/vector/web-ui-ux-design-web-development-3d-concept.jpg?s=612x612&w=0&k=20&c=fuQZC3NmQDViKiWOte0e7a54LMmk3st3m2v-sVIS1Ks=" alt="Services Image">
         </div>
-      </div>
+        <div class="services-text">
+            <div class="services-background">
+                <h2>Services</h2>
+                <br>
+                <p>We offer a range of services aimed at supporting project development and idea sharing. Whether you need assistance with project management, design consultations, or technical support, our team is here to help you turn your visions into reality.</p>            </div>
+        </div>
     </div>
-  </section>
+</section>
 
+
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact Us</h2>
     <div class="contact-details">
@@ -71,7 +82,9 @@
     </div>
   </section>
 
+  <!-- JavaScript for scrolling behavior -->
   <script>
+    // Add scroll event to change navbar style
     window.addEventListener('scroll', () => {
       const navbar = document.getElementById('navbar');
       if (window.scrollY > 50) {
@@ -81,5 +94,6 @@
       }
     });
   </script>
+
 </body>
 </html>
