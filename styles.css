@@ -1,14 +1,17 @@
+/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Styling the body */
 body {
     font-family: Arial, sans-serif;
     color: #333;
 }
 
+/* Navigation Bar */
 nav {
     position: fixed;
     width: 100%;
@@ -16,35 +19,39 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background-color: #000;
+    background-color: #000; /* Black background */
     transition: background-color 0.3s ease;
 }
 
+/* Logo */
 .logo img {
     height: 40px;
     width: auto;
 }
 
+/* Center the navigation links */
 .nav-links {
     display: flex;
     gap: 15px;
 }
 
+/* Style for "bubble" links */
 .nav-links a {
     color: #000;
     background-color: #fff;
     text-decoration: none;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 20px; /* Bubble effect */
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .nav-links a:hover {
-    background-color: #333;
+    background-color: #333; /* Darker bubble on hover */
     color: #fff;
 }
 
+/* Login Button */
 .login-button a {
     color: #fff;
     background-color: transparent;
@@ -61,6 +68,7 @@ nav {
     color: #000;
 }
 
+/* Home Section Styling */
 #home {
     display: flex;
     flex-direction: column;
@@ -74,6 +82,11 @@ nav {
 .home-content h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
+}
+
+.home-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
 .home-images {
@@ -93,6 +106,7 @@ nav {
     transform: scale(1.05);
 }
 
+/* About Section Styling */
 #about {
     padding: 100px 20px;
 }
@@ -105,29 +119,31 @@ nav {
 
 .about-text {
     flex: 1;
-    text-align: right;
-    padding-right: 20px;
+    text-align: right; /* Align text to the right */
+    padding-right: 20px; /* Optional: Add padding for better spacing */
 }
 
+/* Black box behind about text */
 .about-background {
-    background-color: #000;
-    padding: 20px;
-    border-radius: 10px;
-    color: #fff;
+    background-color: #000; /* Black background */
+    padding: 20px; /* Spacing inside the box */
+    border-radius: 10px; /* Optional: Round corners */
+    color: #fff; /* White text */
 }
 
 .about-image {
     flex: 1;
-    text-align: left;
+    text-align: left; /* Align image to the left */
 }
 
 .about-image img {
-    width: 500%;
-    max-width: 600px;
-    border-radius: 20px;
-    animation: pop 0.5s ease-in-out;
+    width: 500%; /* Responsive image */
+    max-width: 600px; /* Limit maximum width */
+    border-radius: 20px; /* Round corners */
+    animation: pop 0.5s ease-in-out; /* Animation on load */
 }
 
+/* Services Section Styling */
 #services {
     padding: 100px 20px;
 }
@@ -140,33 +156,35 @@ nav {
 
 .services-image {
     flex: 1;
-    text-align: left;
+    text-align:left; /* Align image to the left */
 }
 
+/* Black box behind services text */
 .services-background {
-    background-color: #000;
-    padding: 20px;
-    border-radius: 10px;
-    color: #fff;
+    background-color: #000; /* Black background */
+    padding: 20px; /* Spacing inside the box */
+    border-radius: 10px; /* Optional: Round corners */
+    color: #fff; /* White text */
 }
 
 .services-text {
     flex: 1;
-    text-align: left;
-    padding-left: 20px;
+    text-align: left; /* Align text to the left */
+    padding-left: 20px; /* Optional: Add padding for better spacing */
 }
 
 .services-image img {
-    width: 500%;
-    max-width: 600px;
-    border-radius: 20px;
-    animation: pop 0.5s ease-in-out;
+    width: 500%; /* Responsive image */
+    max-width: 600px; /* Limit maximum width */
+    border-radius: 20px; /* Round corners */
+    animation: pop 0.5s ease-in-out; /* Animation on load */
 }
 
+/* Contact Section Styling */
 #contact {
     padding: 100px 20px;
     background-color: #d3d3d3;
-    text-align: left;
+    text-align: left; /* Align text to the left */
 }
 
 #contact h2 {
@@ -175,7 +193,7 @@ nav {
 }
 
 .contact-details {
-    max-width: 600px;
+    max-width: 600px; /* Optional: Limit the width for better readability */
 }
 
 .contact-details p {
@@ -183,6 +201,7 @@ nav {
     margin: 10px 0;
 }
 
+/* Animation for popping effect */
 @keyframes pop {
     0% {
         transform: scale(0.8);
@@ -194,6 +213,7 @@ nav {
     }
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -211,22 +231,22 @@ nav {
 
     .about-container,
     .services-container {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column; /* Stack elements vertically on small screens */
+        text-align: center; /* Center text on small screens */
     }
     
     .about-image,
     .services-image {
-        text-align: center;
+        text-align: center; /* Center images on small screens */
     }
 
     .about-background,
     .services-background {
-        padding: 15px;
+        padding: 15px; /* Adjust padding on smaller screens */
     }
 
     .about-image img,
     .services-image img {
-        max-width: 100%;
+        max-width: 100%; /* Make images responsive */
     }
 }
