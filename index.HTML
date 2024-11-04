@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="navbar">
+    <div class="logo">
+      <img src="https://play-lh.googleusercontent.com/06uT-pu776PNnu2Zj47l0ynqV7bl_BPBqPaclOCqEG64XYBd-HIovqbhDfX9s9Rjkg" alt="Webee">
+    </div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="login-button">
+      <a href="#login">Login / Sign In</a>
+    </div>
+  </nav>
+  
+  <section id="home">
+    <div class="home-content">
+      <h1>Welcome to Webee</h1>
+      <div class="home-images">
+        <img src="https://digitalnotebook.in/up/2023/06/Website-design.jpg" alt="Image 1">
+        <img src="https://cdn.mos.cms.futurecdn.net/njuqY8bVEAK48uSGWiXxPi.jpg" alt="Image 2">
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-container">
+      <div class="about-text">
+        <div class="about-background">
+          <h2>About Us</h2>
+          <p>At Webee, we are dedicated to sharing innovative projects and ideas that inspire creativity and collaboration. Our platform allows users to showcase their work and connect with like-minded individuals, fostering a vibrant community of creators.</p>
+        </div>
+      </div>
+      <div class="about-image">
+        <img src="https://www.gmtasoftware.com/blog/wp-content/uploads/2024/05/PERSONAL-WEBSITE-IDEAS-1024x538.png" alt="About Image">
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="services-container">
+      <div class="services-image">
+        <img src="https://media.istockphoto.com/id/1341415561/vector/web-ui-ux-design-web-development-3d-concept.jpg?s=612x612&w=0&k=20&c=fuQZC3NmQDViKiWOte0e7a54LMmk3st3m2v-sVIS1Ks=" alt="Services Image">
+      </div>
+      <div class="services-text">
+        <div class="services-background">
+          <h2>Services</h2>
+          <p>We offer a range of services aimed at supporting project development and idea sharing. Whether you need assistance with project management, design consultations, or technical support, our team is here to help you turn your visions into reality.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-details">
+      <p>We value your feedback and are here to answer any questions you may have. Feel free to reach out to us for any inquiries or support needs!</p>
+      <p><strong>Email:</strong> contact@ourwebsite.com</p>
+      <p><strong>Phone:</strong> +123-456-7890</p>
+      <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+      <p><strong>Working Hours:</strong> Monday to Friday, 9:00 AM - 5:00 PM</p>
+    </div>
+  </section>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
